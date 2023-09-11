@@ -1,0 +1,226 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define basic styles for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: darkblue;
+    background-image: url('https://img.freepik.com/premium-photo/cube-patterns-black-background-abstract-background-shiny-metal-matte-metal-red-blue-metal-background-generative-ai_771357-1318.jpg?w=360'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    color: #333; /* Text color for improved readability on the background */
+}
+
+/* Add these CSS styles to create the layout and adjust description size */
+.about-content {
+    flex: 1; /* Allow the description to take up remaining space */
+    margin-left: 200px; /* Adjust the margin as needed */
+}
+/* Add margin-bottom to paragraphs in the About Me section */
+.section#about p {
+    margin-bottom: 1em; /* You can adjust the value to control the gap size */
+}
+
+.profile-picture {
+    width: 200px; /* Adjust the size of the circular frame as needed */
+    height: 200px; /* Same as the width for a perfect circle */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides any content outside the circular frame */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Optional: Add a shadow effect */
+}
+
+.profile-picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Adjust the font size of the description */
+.section p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profile-picture {
+        width: 150px; /* Adjust the size for smaller screens */
+        height: 150px; /* Same as the width for a perfect circle */
+        margin-top: 20px; /* Add margin for separation */
+    }
+    
+    /* Reduce description font size for smaller screens */
+    .section p {
+        font-size: 16px; /* Adjust the font size as needed for smaller screens */
+    }
+}
+.aboutme{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+.container_about{
+    display: flex;
+    max-width: 1300px;
+    margin:  0 auto;
+    padding: 20px;
+    color: white;
+}
+.container {
+    
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+.resume-link{
+    text-align: center;
+    margin-left: 150px;
+}
+.resume-link a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: slategrey;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+.resume-link a:hover {
+    background-color: darkred;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background color for the header */
+    color: #fff; /* Text color for the header */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Smooth header background transition */
+    
+    /* Box shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Custom color for the box shadow */
+    border-bottom: 1px solid #333; /* Custom color for the border shadow */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color: white; /* Text color for header */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth link color transition */
+}
+
+nav ul li a:hover {
+    color: #ff9900; /* Hover link color */
+}
+
+/* Define styles for each section */
+.section {
+    color: #fff;
+    padding: 100px 0; /* Reduced padding for sections */
+    
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8); /* Box shadow for sections */
+    margin-bottom: 40px;
+
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: white; /* Text color for section headers */
+}
+
+.portfolio-item {
+    margin-bottom: 30px; /* Reduced margin for portfolio items */
+    position: relative;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for images */
+    transition: transform 0.3s ease; /* Smooth image scale transition */
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05); /* Image scale on hover */
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #333; /* Text color for project titles */
+}
+
+.portfolio-item p {
+    color: #777; /* Text color for project descriptions */
+}
+
+/* Define styles for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ff6600; /* Change the background color on hover */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    /* Adjust padding for sections on smaller screens */
+    .section {
+        padding: 60px 0;
+    }
+    
+    /* Reduce padding for portfolio items on smaller screens */
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
+}
