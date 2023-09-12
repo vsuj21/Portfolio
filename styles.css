@@ -7,7 +7,7 @@ body, h1, h2, p {
 /* Define basic styles for the page */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: darkblue;
+    background-color: black;
     background-image: url('Pbackgrnd.avif'); /* Add your background image URL here */
     background-size: cover;
     background-position: center;
@@ -44,24 +44,7 @@ body {
     font-size: 18px; /* Adjust the font size as needed */
 }
 
-/* Media query for responsive design */
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .profile-picture {
-        width: 150px; /* Adjust the size for smaller screens */
-        height: 150px; /* Same as the width for a perfect circle */
-        margin-top: 20px; /* Add margin for separation */
-    }
-    
-    /* Reduce description font size for smaller screens */
-    .section p {
-        font-size: 16px; /* Adjust the font size as needed for smaller screens */
-    }
-}
+
 .aboutme{
     padding: 20px;
     margin: 0 auto;
@@ -239,19 +222,52 @@ footer {
     background-color: #ff6600; /* Change the background color on hover */
 }
 
-/* Media query for responsive design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
-    }
-    
-    /* Adjust padding for sections on smaller screens */
-    .section {
-        padding: 60px 0;
-    }
-    
-    /* Reduce padding for portfolio items on smaller screens */
-    .portfolio-item {
-        margin-bottom: 20px;
+        margin-left: 0; /* Center-align header text */
     }
 }
+@media (max-width: 768px) {
+    .aboutme {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .profile-picture {
+        margin: 0 auto;
+    }
+
+    .about-content {
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .portfolio-item1 {
+        flex-direction: column; /* Stack video and text vertically */
+        margin-top: 20px; /* Add margin for separation */
+    }
+
+    .video-wrapper video {
+        width: 100%; /* Adjust video width to fill the container */
+        margin: 0; /* Remove margin for videos */
+    }
+
+    .text-content {
+        margin: 10px auto;
+    }
+
+    .portfolio-item2 video {
+        width: 100%; /* Adjust video width to fill the container */
+        margin: 0 auto; /* Center-align the video */
+    }
+}
+@media (max-width: 768px) {
+    .contact-button {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px; /* Add margin for separation */
+    }
+}
+
