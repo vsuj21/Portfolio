@@ -16,14 +16,24 @@ body {
     color: #333; /* Text color for improved readability on the background */
 }
 
-/* Add these CSS styles to create the layout and adjust description size */
+
 .about-content {
     flex: 1; /* Allow the description to take up remaining space */
     margin-left: 200px; /* Adjust the margin as needed */
 }
 /* Add margin-bottom to paragraphs in the About Me section */
 .section#about p {
-    margin-bottom: 1em; /* You can adjust the value to control the gap size */
+    margin-bottom: 1em;
+}
+.context p{
+    margin-bottom: 1em;
+}
+.container_about{
+    display: flex;
+    max-width: 1300px;
+    margin:  0 auto;
+    padding: 10px;
+    color: white;
 }
 
 .profile-picture {
@@ -39,9 +49,8 @@ body {
     display: block;
 }
 
-/* Adjust the font size of the description */
 .section p {
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 18px;
 }
 
 
@@ -55,13 +64,7 @@ body {
     margin: 0 auto;
     max-width: 1350px;
 }
-.container_about{
-    display: flex;
-    max-width: 1300px;
-    margin:  0 auto;
-    padding: 10px;
-    color: white;
-}
+
 .container {
     
     margin: 0 auto;
@@ -87,6 +90,7 @@ body {
 .resume-link a:hover {
     background-color: darkred;
 }
+
 
 
 header {
@@ -147,13 +151,34 @@ nav ul li a:hover {
 }
 
 .portfolio-item {
+    margin-left: 30px;
+    margin-top: 60px;
     margin-bottom: 30px; /* Reduced margin for portfolio items */
-    position: relative;
+    align-items: center;
+    
 }
 .portfolio-item1 {
     margin-bottom: 30px;
     display: flex; /* Use flexbox to control layout */
     align-items: center; /* Vertically center align content */
+}
+.portfolio-item2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-content2 {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+    transition: transform 0.3s ease;
 }
 
 .video-wrapper {
@@ -161,14 +186,14 @@ nav ul li a:hover {
     margin-right: 20px; /* Add some margin for separation */
 }
 
-.video-wrapper video {
+/*.video-wrapper video {
     width: 80%;
     height: auto;
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
     transition: transform 0.3s ease;
-}
+}*/
 .portfolio-item1 video{
     width: 70%;
     height: 60%;
@@ -177,18 +202,18 @@ nav ul li a:hover {
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
 }
 .portfolio-item2 video{
-    width: 35%;
-    height: 30%;
-    margin-left: 800px;
+    display: flex;
+    width: 70%;
+    height: 60%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
 }
 .portfolio-item video {
     width: 50%;
     height: 50%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.2);
+    
 }
 
 .portfolio-item img:hover {
@@ -198,11 +223,11 @@ nav ul li a:hover {
 .portfolio-item h3 {
     font-size: 1.5rem;
     margin-top: 10px;
-    color: #333; /* Text color for project titles */
+    color: white; /* Text color for project titles */
 }
 
 .portfolio-item p {
-    color: #777; /* Text color for project descriptions */
+    color: white; /* Text color for project descriptions */
 }
 
 
@@ -261,6 +286,9 @@ footer {
     }
 
     .text-content {
+        margin: 10px auto;
+    }
+    .text-content2{
         margin: 10px auto;
     }
 
