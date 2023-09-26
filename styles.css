@@ -1,31 +1,36 @@
-/* Reset some default styles */
+
 body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
-/* Define basic styles for the page */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: black;
-    background-image: url('portfolioBackground.jpg'); /* Add your background image URL here */
+    background-image: url('portfolioBackground.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixed background image */
-    color: #333; /* Text color for improved readability on the background */
+    background-attachment: fixed; 
+    color: #333; 
 }
 
 
 .about-content {
-    flex: 1; /* Allow the description to take up remaining space */
-    margin-left: 200px; /* Adjust the margin as needed */
+    flex: 1; 
+    margin-left: 200px; 
 }
-/* Add margin-bottom to paragraphs in the About Me section */
 .about-content p {
     margin-bottom: 1em;
 }
 .context p{
+    margin-bottom: 1em;
+}
+.portfolio-item3 p{
+    margin-bottom: 1em;
+}
+.contactme p{
     margin-bottom: 1em;
 }
 .container_about{
@@ -38,11 +43,11 @@ body {
 
 .profile-picture {
     
-    width: 200px; /* Adjust the size of the circular frame as needed */
-    height: 200px; /* Same as the width for a perfect circle */
-    border-radius: 50%; /* Creates a circular shape */
-    overflow: hidden; /* Hides any content outside the circular frame */
-    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8); /* Optional: Add a shadow effect */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8); 
 }
 
 .profile-picture img {
@@ -51,15 +56,27 @@ body {
 }
 .company-picture {
     margin-top: 50px;
-    width: 200px; /* Adjust the size of the circular frame as needed */
-    height: 200px; /* Same as the width for a perfect circle */
-    border-radius: 50%; /* Creates a circular shape */
-    overflow: hidden; /* Hides any content outside the circular frame */
-    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8); /* Optional: Add a shadow effect */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8); 
 }
 
 .company-picture img {
     max-width: 100%;   
+    display: block;
+}
+.uni-picture{
+    margin-top: 30px;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+}
+.uni-picture img{
+    max-width: 100%;
     display: block;
 }
 
@@ -87,7 +104,7 @@ body {
     color: white;
 }
 .container1{
-    margin-left: 100px;
+    margin-left: 130px;
 }
 .resume-link{
     text-align: center;
@@ -100,7 +117,7 @@ body {
 .certificate-link a{
     display: inline-block;
     padding: 10px 40px;
-    background-color: azure;
+    background-color: lightslategray;
     border-radius: 30px;
     color: black;
     text-decoration: none;
@@ -108,7 +125,7 @@ body {
     transition: background-color 0.3s ease;
 }
 .certificate-link a:hover {
-    background-color: burlywood;
+    background-color: lightcyan;
 }
 .companyname h3{
     font-size: 2rem;
@@ -134,22 +151,22 @@ body {
 
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background color for the header */
-    color: #fff; /* Text color for the header */
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Smooth header background transition */
+    transition: background-color 0.3s ease; 
     
     /* Box shadow */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Custom color for the box shadow */
-    border-bottom: 1px solid #333; /* Custom color for the border shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    border-bottom: 1px solid #333; 
 }
 
 header h1 {
     font-size: 2.5rem;
     margin-left: 20px;
-    color: white; /* Text color for header */
+    color: white;
 }
 
 nav ul {
@@ -165,20 +182,20 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth link color transition */
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    color: #ff9900; /* Hover link color */
+    color: #ff9900; 
 }
 
-/* Define styles for each section */
+
 .section {
     color: #fff;
-    padding: 100px 0; /* Reduced padding for sections */
+    padding: 100px 0; 
     
-    border-radius: 10px; /* Rounded corners for sections */
-    box-shadow: 0px 0px 20px rgba(255,255,255,0.8); /* Box shadow for sections */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8); 
     margin-bottom: 40px;
 
 }
@@ -187,20 +204,15 @@ nav ul li a:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     margin-top: 30px;
-    color: white; /* Text color for section headers */
+    color: white; 
 }
 
-.portfolio-item {
-    margin-left: 50px;
-    margin-top: 60px;
-    margin-bottom: 30px; /* Reduced margin for portfolio items */
-    align-items: center;
-    
-}
+
 .portfolio-item1 {
+    margin-top: 30px;
     margin-bottom: 30px;
-    display: flex; /* Use flexbox to control layout */
-    align-items: center; /* Vertically center align content */
+    display: flex; 
+    align-items: center; 
 }
 .portfolio-item2 {
     margin-left: 30px;
@@ -208,7 +220,12 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: 10px;
 }
-
+.portfolio-item3 {
+    margin-top: 50px;
+   
+    display: flex; 
+    align-items: center; 
+}
 .text-content2 {
     flex: 1;
     margin-right: 10px;
@@ -223,21 +240,14 @@ nav ul li a:hover {
 }
 
 .video-wrapper {
-    flex: 1; /* Allow the video to take up available space */
-    margin-right: 20px; /* Add some margin for separation */
+    flex: 1; 
+    margin-right: 20px; 
 }
 
-/*.video-wrapper video {
-    width: 80%;
-    height: auto;
-    margin-left: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
-    transition: transform 0.3s ease;
-}*/
+
 .portfolio-item1 video{
     width: 70%;
-    height: 60%;
+    height: 65%;
     margin-left: 60px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
@@ -249,57 +259,77 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
 }
-.portfolio-item video {
-    margin-top: 20px;
-    margin-left: 40px;
-    width: 30%;
-    height: 20%;
+.portfolio-item3 video{
+    width: 80%;
+    height: 70%;
+    margin-top: 30px;
+    margin-left: 60px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+}
+
+.skill-category {
+    display: inline-block;
+    width: 20%; 
+    margin-right: 5%; 
+    vertical-align: top; 
+}
+
+.skill-category:last-child {
+    margin-right: 0; 
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px ;
+}
+
+.social-links{
+    margin-bottom: 10px;
+}
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 15px;
     
 }
 
-.portfolio-item img:hover {
-    transform: scale(1.05); /* Image scale on hover */
+.social-links a i {
+    font-size: 1.5em;
 }
 
-.portfolio-item h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: white; /* Text color for project titles */
-}
-
-.portfolio-item p {
-    color: white; /* Text color for project descriptions */
-}
-
-
-/* Define styles for the footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+.social-links a:hover {
+    color: lightsteelblue;
 }
 
 .contact-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff9900;
-    color: #fff;
+    background-color: lightsteelblue;
+    color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
+
+
 }
 
 .contact-button:hover {
-    background-color: #ff6600; /* Change the background color on hover */
+    background-color: darkolivegreen; 
 }
 
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
-        margin-left: 0; /* Center-align header text */
+        margin-left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -319,13 +349,16 @@ footer {
 }
 @media (max-width: 768px) {
     .portfolio-item1 {
-        flex-direction: column; /* Stack video and text vertically */
-        margin-top: 20px; /* Add margin for separation */
+        flex-direction: column; 
+        margin-top: 20px; 
     }
-
+    .portfolio-item3 {
+        flex-direction: column; 
+        margin-top: 20px; 
+    }
     .video-wrapper video {
-        width: 100%; /* Adjust video width to fill the container */
-        margin: 0; /* Remove margin for videos */
+        width: 100%; 
+        margin: 0; 
     }
 
     .text-content {
@@ -336,15 +369,15 @@ footer {
     }
 
     .portfolio-item2 video {
-        width: 100%; /* Adjust video width to fill the container */
-        margin: 0 auto; /* Center-align the video */
+        width: 100%; 
+        margin: 0 auto; 
     }
 }
 @media (max-width: 768px) {
     .contact-button {
         text-align: center;
         margin-left: 0;
-        margin-top: 20px; /* Add margin for separation */
+        margin-top: 20px; 
     }
 }
 
