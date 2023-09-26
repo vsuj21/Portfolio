@@ -22,7 +22,7 @@ body {
     margin-left: 200px; /* Adjust the margin as needed */
 }
 /* Add margin-bottom to paragraphs in the About Me section */
-.section#about p {
+.about-content p {
     margin-bottom: 1em;
 }
 .context p{
@@ -37,6 +37,7 @@ body {
 }
 
 .profile-picture {
+    
     width: 200px; /* Adjust the size of the circular frame as needed */
     height: 200px; /* Same as the width for a perfect circle */
     border-radius: 50%; /* Creates a circular shape */
@@ -45,6 +46,19 @@ body {
 }
 
 .profile-picture img {
+    max-width: 100%;   
+    display: block;
+}
+.company-picture {
+    margin-top: 50px;
+    width: 200px; /* Adjust the size of the circular frame as needed */
+    height: 200px; /* Same as the width for a perfect circle */
+    border-radius: 50%; /* Creates a circular shape */
+    overflow: hidden; /* Hides any content outside the circular frame */
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8); /* Optional: Add a shadow effect */
+}
+
+.company-picture img {
     max-width: 100%;   
     display: block;
 }
@@ -61,20 +75,46 @@ body {
 }
 .project{
     padding: 5px;
-    margin: 0 auto;
-    max-width: 1350px;
+    margin-left: 100px;
+    
+    max-width: 1250px;
 }
 
 .container {
-    
+    margin-left: 20px;
     margin: 0 auto;
     padding: 10px;
     color: white;
+}
+.container1{
+    margin-left: 100px;
 }
 .resume-link{
     text-align: center;
     margin-left: 150px;
 }
+.certificate-link{
+    text-align: left;
+    margin-left: 130px;
+}
+.certificate-link a{
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: azure;
+    border-radius: 30px;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.certificate-link a:hover {
+    background-color: burlywood;
+}
+.companyname h3{
+    font-size: 2rem;
+    color: bisque;
+}
+
 .resume-link a {
     display: inline-block;
     padding: 10px 40px;
@@ -151,7 +191,7 @@ nav ul li a:hover {
 }
 
 .portfolio-item {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 60px;
     margin-bottom: 30px; /* Reduced margin for portfolio items */
     align-items: center;
@@ -163,6 +203,7 @@ nav ul li a:hover {
     align-items: center; /* Vertically center align content */
 }
 .portfolio-item2 {
+    margin-left: 30px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -209,6 +250,8 @@ nav ul li a:hover {
     box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
 }
 .portfolio-item video {
+    margin-top: 20px;
+    margin-left: 40px;
     width: 30%;
     height: 20%;
     border-radius: 10px;
